@@ -1,0 +1,10 @@
+name: my-api
+image: my-api
+port: 8000
+env: production
+cloud: docker
+replicas: 1
+health_check: /health
+env_vars:
+  DEBUG: "false"
+  LOG_LEVEL: INFO
